@@ -7,3 +7,13 @@ def cart_prod(*sets):
         return {tuple(prod) for prod in result}
     else:
         return set(tuple())
+              
+A = {1}
+B = {1, 2}
+C = {1, 2, 3}
+X = {'a'}
+Y = {'a', 'b'}
+Z = {'a', 'b', 'c'}
+
+print(cart_prod(A, B, C))
+print(cart_prod(X, Y, Z))
